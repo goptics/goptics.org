@@ -1,7 +1,7 @@
 # goptics.org
 
 The organization website for [Goptics](https://github.com/goptics): focused,
-non-commercial open-source tools for Go developers.
+non-commercial open-source tools built with Go.
 
 ## Local preview
 
@@ -15,14 +15,14 @@ Then open <http://localhost:4173>.
 
 ## Structure
 
-- `index.html` — organization landing page
-- `styles.css` — layout, tokens, responsive behavior, and motion
-- `404.html` — branded not-found page
-- `privacy.html` — plain-language privacy notice
-- `assets/` — optimized Goptics marks and the self-hosted Recursive typeface
-- `scripts/update-stars.mjs` — fetches and renders organization star statistics
-- `data/github-stars.json` — current totals and a bounded daily history
-- `.github/workflows/update-stars.yml` — refreshes the statistics every day
+- `index.html`: organization landing page
+- `styles.css`: layout, tokens, responsive behavior, and motion
+- `404.html`: branded not-found page
+- `privacy.html`: plain-language privacy notice
+- `assets/`: optimized Goptics marks and the self-hosted Recursive typeface
+- `scripts/update-stars.mjs`: fetches and renders organization star statistics
+- `data/github-stars.json`: current totals and a bounded daily history
+- `.github/workflows/update-stars.yml`: refreshes the statistics every day
 
 ## GitHub star pulse
 
