@@ -254,7 +254,7 @@ h1 em {
 }
 
 .focus-print::before {
-  width: 140%;
+  width: min(140%, calc(100% + 100vw - var(--shell) - 24px));
   aspect-ratio: 1;
   top: 50%;
   left: 50%;
@@ -262,7 +262,7 @@ h1 em {
 }
 
 .focus-print::after {
-  width: 166%;
+  width: min(166%, calc(100% + 100vw - var(--shell) - 24px));
   aspect-ratio: 1;
   top: 50%;
   left: 50%;
@@ -767,9 +767,7 @@ h1 em {
   }
 
   .focus-print {
-    width: min(76%, 380px);
-    margin-top: 28px;
-    justify-self: center;
+    display: none;
   }
 
   .section-heading,
@@ -842,18 +840,6 @@ h1 em {
 
   .hero-summary {
     margin-top: 28px;
-  }
-
-  .focus-print {
-    width: min(90%, 350px);
-  }
-
-  .focus-print::before {
-    width: 122%;
-  }
-
-  .focus-print::after {
-    width: 142%;
   }
 
   .principle-line__inner {
