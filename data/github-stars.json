@@ -1,0 +1,47 @@
+{
+  "organization": "goptics",
+  "updatedAt": "2026-07-29",
+  "trackingSince": "2026-07-29",
+  "totalStars": 320,
+  "repositoryCount": 6,
+  "change": 0,
+  "trackedDays": 0,
+  "repositories": [
+    {
+      "name": "duckq",
+      "stars": 3,
+      "url": "https://github.com/goptics/duckq"
+    },
+    {
+      "name": "redisq",
+      "stars": 7,
+      "url": "https://github.com/goptics/redisq"
+    },
+    {
+      "name": "sortbench",
+      "stars": 0,
+      "url": "https://github.com/goptics/sortbench"
+    },
+    {
+      "name": "sqliteq",
+      "stars": 40,
+      "url": "https://github.com/goptics/sqliteq"
+    },
+    {
+      "name": "varmq",
+      "stars": 192,
+      "url": "https://github.com/goptics/varmq"
+    },
+    {
+      "name": "vizb",
+      "stars": 78,
+      "url": "https://github.com/goptics/vizb"
+    }
+  ],
+  "history": [
+    {
+      "date": "2026-07-29",
+      "totalStars": 320
+    }
+  ]
+}

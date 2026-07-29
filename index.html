@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Goptics builds focused, non-commercial open-source tools for Go developers."
+    />
+    <meta name="theme-color" content="#fbfbea" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#101d20" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Goptics — focused open-source tools for Go" />
+    <meta
+      property="og:description"
+      content="Bringing distant Go features into sharp focus."
+    />
+    <meta property="og:url" content="https://goptics.org/" />
+    <meta property="og:image" content="https://goptics.org/assets/goptics-mark.png" />
+    <meta property="og:image:width" content="460" />
+    <meta property="og:image:height" content="460" />
+    <meta property="og:image:alt" content="The cyan Goptics aperture mark" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="canonical" href="https://goptics.org/" />
+    <link rel="icon" href="/assets/goptics-mark.webp" type="image/webp" />
+    <link
+      rel="preload"
+      href="/assets/fonts/recursive-english.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="/styles.css" />
+
+    <title>Goptics — focused open-source tools for Go</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header shell">
+      <a class="brand" href="/" aria-label="Goptics home">
+        <img src="/assets/goptics-mark.webp" alt="" width="460" height="460" />
+        <span>goptics</span>
+      </a>
+
+      <a class="header-link" href="https://github.com/goptics">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>Open source</span><span>Built for Go</span></p>
+          <h1 id="hero-title">
+            Bringing distant <em>Go features</em> into sharp focus.
+          </h1>
+          <p class="hero-summary">
+            Goptics is an independent, non-commercial open-source effort building
+            focused tools for developers who value clear APIs and software that
+            stays out of the way.
+          </p>
+          <a class="text-link hero-link" href="#projects">
+            Explore the projects <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <figure class="focus-print">
+          <div class="focus-print__meta" aria-hidden="true">
+            <span>FOCUS / 001</span>
+            <span>BD · 23.6850° N</span>
+          </div>
+          <img
+            src="/assets/goptics-mark.webp"
+            alt="Goptics logo: a cyan Go wordmark with a camera aperture"
+            width="460"
+            height="460"
+          />
+          <figcaption>
+            <span>A small aperture.</span>
+            <span>A sharper tool.</span>
+          </figcaption>
+        </figure>
+      </section>
+
+      <aside class="principle-line" aria-label="Goptics principles">
+        <div class="shell principle-line__inner">
+          <span>Small tools</span>
+          <span aria-hidden="true">/</span>
+          <span>Clear APIs</span>
+          <span aria-hidden="true">/</span>
+          <span>Built in public</span>
+        </div>
+      </aside>
+
+      <section class="github-pulse shell" aria-labelledby="github-pulse-title">
+        <p class="section-index" id="github-pulse-title">GitHub pulse / updated daily</p>
+        <p class="github-pulse__sentence">
+          <!-- github-stars:start -->
+            <strong class="github-pulse__total">320 stars</strong>
+            <span>across 6 open-source projects</span>
+            <span class="github-pulse__change">Tracking started Jul 29, 2026</span>
+            <!-- github-stars:end -->
+        </p>
+        <a
+          class="github-pulse__link"
+          href="https://github.com/orgs/goptics/repositories"
+          aria-label="View all Goptics repositories on GitHub"
+        >
+          View the work <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+
+      <section class="projects shell" id="projects" aria-labelledby="projects-title">
+        <header class="section-heading">
+          <p class="section-index">01 / Projects</p>
+          <div>
+            <h2 id="projects-title">Two tools, one point of view.</h2>
+            <p>
+              Purpose-built software for concurrent work and observable results.
+            </p>
+          </div>
+        </header>
+
+        <article class="project project--varmq">
+          <div class="project-number" aria-hidden="true">01</div>
+          <div class="project-body">
+            <p class="project-type">Concurrency / message queues</p>
+            <h3>VarMQ</h3>
+            <p>
+              Type-safe queues and worker pools for concurrent Go programs, with
+              priority, persistence, distribution, and runtime control built in.
+            </p>
+            <code>go get github.com/goptics/varmq</code>
+          </div>
+          <nav class="project-links" aria-label="VarMQ links">
+            <a href="https://github.com/goptics/varmq">
+              Repository <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://pkg.go.dev/github.com/goptics/varmq">
+              Go reference <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://varmq.goptics.org/bench-log/">
+              Benchmarks <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://goptics.github.io/varmq-benchmarks/">
+              Comparisons <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
+        </article>
+
+        <article class="project project--vizb">
+          <div class="project-number" aria-hidden="true">02</div>
+          <div class="project-body">
+            <p class="project-type">Data / visualization</p>
+            <h3>Vizb</h3>
+            <p>
+              Turn CSV, JSON, and benchmark output into interactive charts and
+              descriptive statistics inside one self-contained HTML file.
+            </p>
+            <code>vizb bar data.txt -o result.html</code>
+          </div>
+          <nav class="project-links" aria-label="Vizb links">
+            <a href="https://github.com/goptics/vizb">
+              Repository <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://vizb.goptics.org/">
+              Documentation <span aria-hidden="true">↗</span>
+            </a>
+            <a href="https://vizb.goptics.org/examples/">
+              Live examples <span aria-hidden="true">↗</span>
+            </a>
+          </nav>
+        </article>
+
+        <aside class="adapters" aria-labelledby="adapters-title">
+          <div>
+            <p class="section-index">VarMQ adapters</p>
+            <h3 id="adapters-title">Choose where the queue lives.</h3>
+          </div>
+          <div class="adapter-links">
+            <a href="https://github.com/goptics/redisq">
+              <span>RedisQ</span>
+              <small>Distributed</small>
+              <b aria-hidden="true">↗</b>
+            </a>
+            <a href="https://github.com/goptics/sqliteq">
+              <span>SQLiteQ</span>
+              <small>Persistent</small>
+              <b aria-hidden="true">↗</b>
+            </a>
+            <a href="https://github.com/goptics/duckq">
+              <span>DuckQ</span>
+              <small>Analytical</small>
+              <b aria-hidden="true">↗</b>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="manifesto shell" aria-labelledby="manifesto-title">
+        <header>
+          <p class="section-index">02 / How we work</p>
+          <h2 id="manifesto-title">
+            Useful software does not need a commercial agenda.
+          </h2>
+        </header>
+        <dl>
+          <div>
+            <dt>Focused</dt>
+            <dd>Each project solves a specific class of problem and says no often.</dd>
+          </div>
+          <div>
+            <dt>Open</dt>
+            <dd>Source, issues, releases, and technical discussions stay public.</dd>
+          </div>
+          <div>
+            <dt>Practical</dt>
+            <dd>Documentation, examples, and predictable deployment are part of the work.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="closing shell" aria-labelledby="closing-title">
+        <p class="section-index">The whole workshop</p>
+        <h2 id="closing-title">Everything is on GitHub.</h2>
+        <a class="closing-link" href="https://github.com/orgs/goptics/repositories">
+          Browse every repository <span aria-hidden="true">↗</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="site-footer shell">
+      <p>
+        Independent open source from Bangladesh.
+        <span class="country-mark" role="img" aria-label="Bangladesh">🇧🇩</span>
+      </p>
+      <nav aria-label="Footer">
+        <a href="https://github.com/goptics">GitHub</a>
+        <a href="mailto:fahim@goptics.org">Contact</a>
+        <a href="/privacy.html">Privacy</a>
+      </nav>
+      <p class="footer-note">No tracking. No cookies. No paid tier.</p>
+    </footer>
+  </body>
+</html>

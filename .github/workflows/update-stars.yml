@@ -1,0 +1,50 @@
+name: Update GitHub star stats
+
+on:
+  schedule:
+    - cron: "23 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Refresh organization stars
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the site
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Test the updater
+        run: node --test scripts/update-stars.test.mjs
+
+      - name: Fetch and render star data
+        env:
+          GITHUB_ORG: goptics
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/update-stars.mjs
+
+      - name: Commit updated stats
+        run: |
+          git add data/github-stars.json index.html
+
+          if git diff --cached --quiet; then
+            echo "Star data is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update GitHub star stats [skip ci]"
+          git push
