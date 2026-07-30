@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Goptics OG image source</title>
+    <style>
+      @font-face {
+        font-family: "Recursive";
+        src: url("../assets/fonts/recursive-english.woff2") format("woff2");
+        font-style: normal;
+        font-weight: 300 1000;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+        overflow: hidden;
+        background: #fbfbea;
+      }
+
+      body {
+        color: #173039;
+        font-family: "Recursive", ui-sans-serif, system-ui, sans-serif;
+        font-variation-settings: "CASL" 0.15, "CRSV" 0, "MONO" 0, "slnt" 0;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .canvas {
+        position: relative;
+        width: 1200px;
+        height: 630px;
+        padding: 56px 64px 52px;
+        background:
+          radial-gradient(
+            ellipse 58% 72% at 88% 48%,
+            oklch(0.94 0.033 103) 0%,
+            transparent 68%
+          ),
+          #fbfbea;
+        overflow: hidden;
+      }
+
+      .canvas::before,
+      .canvas::after {
+        position: absolute;
+        border: 1px solid rgba(23, 48, 57, 0.1);
+        border-radius: 50%;
+        content: "";
+        pointer-events: none;
+      }
+
+      .canvas::before {
+        width: 520px;
+        height: 520px;
+        top: 50%;
+        right: -40px;
+        transform: translateY(-50%);
+      }
+
+      .canvas::after {
+        width: 640px;
+        height: 640px;
+        top: 50%;
+        right: -100px;
+        transform: translateY(-50%);
+      }
+
+      .top {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 54px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid rgba(23, 48, 57, 0.18);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 28px;
+        font-weight: 750;
+        letter-spacing: -0.02em;
+      }
+
+      .brand img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: block;
+      }
+
+      .meta {
+        font-variation-settings: "CASL" 0, "CRSV" 0, "MONO" 1, "slnt" 0;
+        font-size: 15px;
+        font-weight: 650;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: oklch(0.47 0.028 214);
+      }
+
+      .body {
+        position: relative;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 1fr 360px;
+        gap: 40px;
+        align-items: center;
+        min-height: 360px;
+      }
+
+      .copy {
+        max-width: 680px;
+      }
+
+      .eyebrow {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 28px;
+        color: oklch(0.47 0.028 214);
+        font-variation-settings: "CASL" 0, "CRSV" 0, "MONO" 1, "slnt" 0;
+        font-size: 16px;
+        font-weight: 650;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow span + span::before {
+        margin-right: 12px;
+        color: oklch(0.58 0.13 211);
+        content: "●";
+        font-size: 0.55em;
+        vertical-align: 0.18em;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 72px;
+        font-variation-settings: "CASL" 0.25, "CRSV" 0, "MONO" 0, "slnt" 0;
+        font-weight: 760;
+        letter-spacing: -0.045em;
+        line-height: 0.94;
+        max-width: 11ch;
+      }
+
+      h1 em {
+        color: oklch(0.58 0.13 211);
+        font-style: normal;
+      }
+
+      .principles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 18px;
+        margin-top: 40px;
+        padding-top: 22px;
+        border-top: 1px solid rgba(23, 48, 57, 0.18);
+        color: oklch(0.47 0.028 214);
+        font-variation-settings: "CASL" 0, "CRSV" 0, "MONO" 1, "slnt" 0;
+        font-size: 15px;
+        font-weight: 650;
+        letter-spacing: 0.045em;
+        text-transform: uppercase;
+      }
+
+      .principles span[data-sep] {
+        color: oklch(0.58 0.13 211);
+      }
+
+      .mark-panel {
+        position: relative;
+        justify-self: end;
+        width: 340px;
+        padding: 18px 18px 20px;
+        background: #fbfbea;
+        color: #173039;
+        outline: 1px solid rgba(23, 48, 57, 0.14);
+        outline-offset: -1px;
+        transform: rotate(2deg);
+        box-shadow:
+          0 1px 0 rgba(23, 48, 57, 0.04),
+          12px 18px 40px rgba(23, 48, 57, 0.08);
+      }
+
+      .mark-panel__meta,
+      .mark-panel figcaption {
+        display: flex;
+        justify-content: space-between;
+        gap: 12px;
+        font-variation-settings: "CASL" 0, "CRSV" 0, "MONO" 1, "slnt" 0;
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .mark-panel img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-block: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <header class="top">
+        <div class="brand">
+          <img src="../assets/goptics-mark.png" alt="" width="40" height="40" />
+          <span>goptics</span>
+        </div>
+        <div class="meta">FOCUS / 001</div>
+      </header>
+
+      <div class="body">
+        <div class="copy">
+          <p class="eyebrow"><span>Independent</span><span>Built with Go</span></p>
+          <h1>Open-source <em>software</em> with a sharp focus.</h1>
+          <div class="principles">
+            <span>Small tools</span>
+            <span data-sep>/</span>
+            <span>Clear APIs</span>
+            <span data-sep>/</span>
+            <span>Built in public</span>
+          </div>
+        </div>
+
+        <figure class="mark-panel">
+          <div class="mark-panel__meta">
+            <span>FOCUS / 001</span>
+            <span>BD · 23.6850° N</span>
+          </div>
+          <img
+            src="../assets/goptics-mark.png"
+            alt=""
+            width="460"
+            height="460"
+          />
+          <figcaption>
+            <span>A small aperture.</span>
+            <span>A sharper tool.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </body>
+</html>

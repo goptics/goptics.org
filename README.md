@@ -19,10 +19,24 @@ Then open <http://localhost:4173>.
 - `styles.css`: layout, tokens, responsive behavior, and motion
 - `404.html`: branded not-found page
 - `privacy.html`: plain-language privacy notice
-- `assets/`: optimized Goptics marks and the self-hosted Recursive typeface
+- `assets/`: optimized Goptics marks, Open Graph image, and the self-hosted Recursive typeface
+- `assets/og-image.png`: social preview image (1200×630)
+- `scripts/og-image.html`: source layout used to render the OG image
+- `scripts/render-og.mjs`: headless Chrome screenshot → `assets/og-image.png`
 - `scripts/update-stars.mjs`: fetches and renders organization star statistics
 - `data/github-stars.json`: current totals and a bounded daily history
 - `.github/workflows/update-stars.yml`: refreshes the statistics every day
+
+## Open Graph image
+
+The site uses a standard 1200×630 social card at `assets/og-image.png`. It
+carries the homepage H1 and the light paper / ink / cyan theme.
+
+To re-render after copy or brand changes (requires Google Chrome or Chromium):
+
+```bash
+node scripts/render-og.mjs
+```
 
 ## GitHub star pulse
 
