@@ -1,11 +1,11 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-08-02",
+  "updatedAt": "2026-08-03",
   "trackingSince": "2026-07-29",
-  "totalStars": 328,
+  "totalStars": 329,
   "repositoryCount": 7,
-  "change": 4,
-  "trackedDays": 4,
+  "change": 5,
+  "trackedDays": 5,
   "repositories": [
     {
       "name": "duckq",
@@ -39,7 +39,7 @@
     },
     {
       "name": "vizb",
-      "stars": 80,
+      "stars": 81,
       "url": "https://github.com/goptics/vizb"
     }
   ],
@@ -63,6 +63,10 @@
     {
       "date": "2026-08-02",
       "totalStars": 328
+    },
+    {
+      "date": "2026-08-03",
+      "totalStars": 329
     }
   ]
 }
