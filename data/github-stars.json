@@ -1,11 +1,11 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-08-19",
+  "updatedAt": "2026-08-20",
   "trackingSince": "2026-07-29",
   "totalStars": 336,
   "repositoryCount": 7,
   "change": 12,
-  "trackedDays": 21,
+  "trackedDays": 22,
   "repositories": [
     {
       "name": "duckq",
@@ -130,6 +130,10 @@
     },
     {
       "date": "2026-08-19",
+      "totalStars": 336
+    },
+    {
+      "date": "2026-08-20",
       "totalStars": 336
     }
   ]
