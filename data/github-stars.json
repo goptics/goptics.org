@@ -1,11 +1,11 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-08-24",
+  "updatedAt": "2026-08-25",
   "trackingSince": "2026-07-29",
-  "totalStars": 344,
+  "totalStars": 349,
   "repositoryCount": 7,
-  "change": 20,
-  "trackedDays": 26,
+  "change": 25,
+  "trackedDays": 27,
   "repositories": [
     {
       "name": "duckq",
@@ -34,7 +34,7 @@
     },
     {
       "name": "varmq",
-      "stars": 202,
+      "stars": 207,
       "url": "https://github.com/goptics/varmq"
     },
     {
@@ -151,6 +151,10 @@
     {
       "date": "2026-08-24",
       "totalStars": 344
+    },
+    {
+      "date": "2026-08-25",
+      "totalStars": 349
     }
   ]
 }
