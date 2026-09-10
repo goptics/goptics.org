@@ -1,9 +1,9 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-09-09",
+  "updatedAt": "2026-09-10",
   "trackingSince": "2026-07-29",
   "totalStars": 354,
-  "repositoryCount": 7,
+  "repositoryCount": 8,
   "change": 25,
   "trackedDays": 30,
   "repositories": [
@@ -21,6 +21,11 @@
       "name": "redisq",
       "stars": 7,
       "url": "https://github.com/goptics/redisq"
+    },
+    {
+      "name": "skills",
+      "stars": 0,
+      "url": "https://github.com/goptics/skills"
     },
     {
       "name": "sortbench",
@@ -214,6 +219,10 @@
     },
     {
       "date": "2026-09-09",
+      "totalStars": 354
+    },
+    {
+      "date": "2026-09-10",
       "totalStars": 354
     }
   ]
