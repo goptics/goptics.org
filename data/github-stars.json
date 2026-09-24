@@ -1,10 +1,10 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-09-24",
   "trackingSince": "2026-07-29",
   "totalStars": 354,
   "repositoryCount": 8,
-  "change": 10,
+  "change": 5,
   "trackedDays": 30,
   "repositories": [
     {
@@ -275,6 +275,10 @@
     },
     {
       "date": "2026-09-23",
+      "totalStars": 354
+    },
+    {
+      "date": "2026-09-24",
       "totalStars": 354
     }
   ]
