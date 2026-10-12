@@ -1,9 +1,9 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-10-11",
+  "updatedAt": "2026-10-12",
   "trackingSince": "2026-07-29",
   "totalStars": 354,
-  "repositoryCount": 8,
+  "repositoryCount": 9,
   "change": 0,
   "trackedDays": 30,
   "repositories": [
@@ -41,6 +41,11 @@
       "name": "varmq",
       "stars": 208,
       "url": "https://github.com/goptics/varmq"
+    },
+    {
+      "name": "vartop",
+      "stars": 0,
+      "url": "https://github.com/goptics/vartop"
     },
     {
       "name": "vizb",
@@ -347,6 +352,10 @@
     },
     {
       "date": "2026-10-11",
+      "totalStars": 354
+    },
+    {
+      "date": "2026-10-12",
       "totalStars": 354
     }
   ]
