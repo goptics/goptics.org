@@ -1,10 +1,10 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-10-20",
+  "updatedAt": "2026-10-21",
   "trackingSince": "2026-07-29",
-  "totalStars": 354,
+  "totalStars": 355,
   "repositoryCount": 9,
-  "change": 0,
+  "change": 1,
   "trackedDays": 30,
   "repositories": [
     {
@@ -49,7 +49,7 @@
     },
     {
       "name": "vizb",
-      "stars": 91,
+      "stars": 92,
       "url": "https://github.com/goptics/vizb"
     }
   ],
@@ -389,6 +389,10 @@
     {
       "date": "2026-10-20",
       "totalStars": 354
+    },
+    {
+      "date": "2026-10-21",
+      "totalStars": 355
     }
   ]
 }
