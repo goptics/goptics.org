@@ -1,17 +1,12 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-10-22",
+  "updatedAt": "2026-10-23",
   "trackingSince": "2026-07-29",
-  "totalStars": 355,
-  "repositoryCount": 9,
-  "change": 1,
+  "totalStars": 350,
+  "repositoryCount": 8,
+  "change": -4,
   "trackedDays": 30,
   "repositories": [
-    {
-      "name": "duckq",
-      "stars": 5,
-      "url": "https://github.com/goptics/duckq"
-    },
     {
       "name": "goptics.org",
       "stars": 2,
@@ -397,6 +392,10 @@
     {
       "date": "2026-10-22",
       "totalStars": 355
+    },
+    {
+      "date": "2026-10-23",
+      "totalStars": 350
     }
   ]
 }
