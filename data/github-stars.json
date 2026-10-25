@@ -1,12 +1,17 @@
 {
   "organization": "goptics",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-10-25",
   "trackingSince": "2026-07-29",
   "totalStars": 350,
-  "repositoryCount": 8,
+  "repositoryCount": 9,
   "change": -4,
   "trackedDays": 30,
   "repositories": [
+    {
+      "name": "benchmarks",
+      "stars": 0,
+      "url": "https://github.com/goptics/benchmarks"
+    },
     {
       "name": "goptics.org",
       "stars": 2,
@@ -399,6 +404,10 @@
     },
     {
       "date": "2026-10-24",
+      "totalStars": 350
+    },
+    {
+      "date": "2026-10-25",
       "totalStars": 350
     }
   ]
